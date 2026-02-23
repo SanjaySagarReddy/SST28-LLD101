@@ -1,4 +1,5 @@
 public abstract class Exporter {
-    // implied "contract" but not enforced (smell)
+    // Contract: export always returns an ExportResult, never throws.
+
     public abstract ExportResult export(ExportRequest req);
 }
